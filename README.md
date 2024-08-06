@@ -1,4 +1,4 @@
-# get_dynamic_widget
+# get_dynamic_widget_with_riverpod
 
 Flutter project.
 

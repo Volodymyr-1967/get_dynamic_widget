@@ -4,6 +4,7 @@
     "appBar": {
       "type": "app_bar",
       "args": {
+        "centerTitle": true,
         "title": {
           "type": "text",
           "args": {

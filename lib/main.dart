@@ -12,11 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter App',
       theme: ThemeData(
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.blue),
         primarySwatch: Colors.blue,
         textTheme: const TextTheme(
-          titleLarge: TextStyle(fontFamily: 'Roboto', fontWeight: FontWeight.bold, color: Colors.black),
+          titleLarge: TextStyle(
+              fontFamily: 'Roboto',
+              fontWeight: FontWeight.bold,
+              color: Colors.black),
         ),
       ),
       home: const MyHomePage(title: 'Home Page'),
@@ -36,6 +40,7 @@ class MyHomePage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(title),
       ),
       body: jsonDataAsyncValue.when(
@@ -49,7 +54,6 @@ class MyHomePage extends ConsumerWidget {
     );
   }
 }
-
 
 // import 'dart:convert';
 // import 'package:json_dynamic_widget/json_dynamic_widget.dart';
